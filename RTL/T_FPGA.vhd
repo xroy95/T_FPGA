@@ -169,7 +169,7 @@ sys_reset_0 : sysreset
         DEVRST_N=>DEVRST_N_0,
         POWER_ON_RESET_N=>DEVRST_N
     );
-mss_top_sb_0 : entity work.mss_top_sb
+mss_Robot_sb_0 : entity work.mss_Robot_sb
     port map( 
         -- Inputs
         fab_reset_n               => DEVRST_N,

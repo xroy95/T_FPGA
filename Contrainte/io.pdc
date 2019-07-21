@@ -1,0 +1,232 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: v12.1 12.600.0.14
+
+# Family: SmartFusion2 , Die: M2S025 , Package: 256 VF
+
+# Date generated: Sun Jul 21 11:00:57 2019 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io {LED[0]}        \
+    -pinname J16       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {LED[1]}        \
+    -pinname K16       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {LED[2]}        \
+    -pinname M16       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {LED[3]}        \
+    -pinname N16       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {PMOD_N[0]}     \
+    -pinname L11       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {PMOD_N[1]}     \
+    -pinname L14       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {PMOD_N[2]}    \
+    -pinname N14      \
+    -fixed yes        \
+    -RES_PULL Down    \
+    -DIRECTION INPUT
+
+
+set_io {PMOD_N[3]}    \
+    -pinname M15      \
+    -fixed yes        \
+    -RES_PULL Down    \
+    -DIRECTION INPUT
+
+
+set_io {PMOD_P[0]}     \
+    -pinname L12       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {PMOD_P[1]}     \
+    -pinname L13       \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io {PMOD_P[2]}    \
+    -pinname M13      \
+    -fixed yes        \
+    -RES_PULL Down    \
+    -DIRECTION INPUT
+
+
+set_io {PMOD_P[3]}    \
+    -pinname N15      \
+    -fixed yes        \
+    -RES_PULL Down    \
+    -DIRECTION INPUT
+
+
+set_io {Pulse_In[0]}  \
+    -pinname P6       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {Pulse_In[1]}  \
+    -pinname N7       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {Pulse_In[2]}  \
+    -pinname P8       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io {Pulse_In[3]}  \
+    -pinname N8       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io SPI_0_CLK       \
+    -pinname F2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_0_DI       \
+    -pinname F3       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io SPI_0_DO        \
+    -pinname F5        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_0_SS0       \
+    -pinname G2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Trig_out[0]}   \
+    -pinname P7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Trig_out[1]}   \
+    -pinname M7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Trig_out[2]}   \
+    -pinname M8        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {Trig_out[3]}   \
+    -pinname P9        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io UART_RX        \
+    -pinname H3       \
+    -fixed yes        \
+    -RES_PULL Down    \
+    -DIRECTION INPUT
+
+
+set_io UART_TX         \
+    -pinname G3        \
+    -fixed yes         \
+    -RES_PULL Down     \
+    -DIRECTION OUTPUT
+
+
+set_io clk_adc         \
+    -pinname F4        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io reset_adc       \
+    -pinname G5        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+
+#
+#Ports using Dedicated Pins
+
+#
+
+set_io DEVRST_N_0     \
+    -pinname M11      \
+    -DIRECTION INPUT
+
+
