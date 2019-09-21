@@ -141,8 +141,8 @@ signal        apb3_Encoder :  apb3;
 signal        apb3_Encoder_Back :  apb3_Back;
 signal        apb3_SR04 :  apb3;
 signal        apb3_SR04_Back :  apb3_Back;
-signal apb3_slave_array :apb3_array(3 downto 0);
-signal apb3_slave_array_Back :apb3_array_Back(3 downto 0);
+signal apb3_slave_array :apb3_array(0 to 3);
+signal apb3_slave_array_Back :apb3_array_Back(0 to 3);
 signal clk_sound_speed :     std_logic;
 
 
@@ -169,7 +169,7 @@ sys_reset_0 : sysreset
         DEVRST_N=>DEVRST_N_0,
         POWER_ON_RESET_N=>DEVRST_N
     );
-mss_Robot_sb_0 : entity work.mss_Robot_sb
+mss_Robot_sb_0 : entity work.mss_top_sb
     port map( 
         -- Inputs
         fab_reset_n               => DEVRST_N,
@@ -229,11 +229,10 @@ generic map(
 apb3_PWM <=apb3_slave_array(0)  ;
 apb3_slave_array_Back(0)<=apb3_PWM_Back   ;
 
-apb3_ADC <=apb3_slave_array(1)  ;
-apb3_slave_array_Back(1)<=apb3_ADC_Back   ;
-
-apb3_Encoder   <=apb3_slave_array(2);
-apb3_slave_array_Back(2)<=        apb3_Encoder_Back   ;
+apb3_Encoder <=apb3_slave_array(1)  ;
+apb3_slave_array_Back(1) <= apb3_Encoder_Back  ;
+ apb3_ADC <=apb3_slave_array(2);
+apb3_slave_array_Back(2)<=        apb3_ADC_Back   ;
 
 apb3_SR04 <=apb3_slave_array(3)  ;
 apb3_slave_array_Back(3)<=       apb3_SR04_Back   ;
